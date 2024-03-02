@@ -13,6 +13,12 @@ body {
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(187,219,162,1) 50%, rgba(0,122,157,1) 75%, rgba(0,0,0,1) 100%);
 }
 
+.error {
+    background: radial-gradient(circle, rgb(0 0 0 / 70%) 40%, rgba(255, 255, 255, 1) 47%, rgb(219 162 206 / 44%) 50%, rgb(47 0 157 / 64%) 75%, rgba(0, 0, 0, 1) 100%);
+    /* background: radial-gradient(circle, rgb(0 0 0 / 88%) 40%, rgba(255, 255, 255, 1) 47%, rgb(219 207 162) 50%, rgb(157 122 0) 75%, rgba(0, 0, 0, 1) 100%); */
+    color: white !important;
+}
+
 .center {
     max-width: 400px;
     position: absolute;
