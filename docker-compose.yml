@@ -1,8 +1,8 @@
 version: "3"
 
 include:
-  - ./../sapper/docker-compose.yml
-  - ./../ventScript/docker-compose.yml
+  - ./../sapper/docker-compose-prod.yml
+  - ./../ventScript/docker-compose-prod.yml
 
 services:
   nginx:
