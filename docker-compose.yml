@@ -1,9 +1,5 @@
 version: "3"
 
-include:
-  - ./../sapper/docker-compose-prod.yml
-  - ./../ventScript/docker-compose-prod.yml
-
 services:
   nginx:
     image: nginx:latest
@@ -15,8 +11,10 @@ services:
       - "./src:/var/www/html"
       - "./docker/nginx/nginx.conf:/etc/nginx/nginx.conf"
     networks:
-      - space
+      - titleSite
 
 networks:
-  space:
+  titleSite:
+    external: true
+    name: titleSite
     driver: bridge
